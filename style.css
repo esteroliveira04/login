@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cbd5f0;
+    font-family: 'Red Hat Display';
+}
+
+section#hero{
+    background-color: white;
+    height: 550px;
+    width: 350px;
+    margin-top: 25%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.149);
+}
+
+div#img > img{
+    width: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+}
+
+div#conteudo{
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 400px;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+}
+
+#conteudo h1{
+    color: hsl(223, 47%, 23%);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#conteudo p{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+#produto{
+    background-color: hsla(225, 100%, 94%, 0.504);
+    width: 300px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#produto img{
+    height: 50px;
+}
+
+#nome-valor{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100px;
+}
+
+#nome-valor p{
+    text-align: start;
+}
+
+#produto > p>  a{
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button#proceed{
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+}
+
+button#proceed:active{
+    background-color: hsl(245, 65%, 67%);
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+}
+
+button#cancel{
+    background-color: white;
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: hsl(224, 23%, 55%);
+    font-weight: bolder;
+}
+
+button#cancel:active{
+    background-color: white;
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+}
